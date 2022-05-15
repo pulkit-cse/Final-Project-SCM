@@ -2,6 +2,35 @@
 It's a group project consisting 4 members.
 Our Project title is "ATM Maintainance"
 
+#include<iostream>
+
+using namespace std;
+
+class ATM{
+	private:
+		string name="unknown";
+		int accnum=0;
+		int pin=0;
+		int amount=0;
+		int tot=500;
+	
+	public:
+		void details()
+		{
+			cout<<"Enter First Name ";
+			cin>>name;
+			
+			cout<<"Enter Account Number ";
+			cin>>accnum;
+			
+			cout<<"Enter your Account password ";
+			cin>>pin;
+			
+			cout<<"Current balance ";
+			cout<<tot<<endl;
+		}
+
+// rahul
 void showdetails()
 		{
 			cout << "Name:" << name << endl;
