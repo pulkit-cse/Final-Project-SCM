@@ -1,3 +1,36 @@
 	Final SCM Project
 It's a group project consisting 4 members.
 Our Project title is "ATM Maintainance"
+
+void showdetails()
+		{
+			cout << "Name:" << name << endl;
+			cout << "Account No:" << accnum << endl;
+			cout << "Account password:" << pin << endl;
+			cout << "Balance:" << tot << endl;
+		}
+		void deposit()
+		{
+			cout<<"Enter Amount to be deposited ";
+			cin>>amount;
+		}
+		void showbal()
+		{
+			tot=tot+amount;
+			cout<<"Total balance is "<<tot<<endl<<endl;
+		}
+		void withdrawal()
+		{
+			int a,a_bal;
+			cout<<"Enter amount to withdraw ";
+			cin>>a;
+			if(a>tot){
+				cout<<"Insufficient balance"<<endl;
+			}
+			else 
+			{
+				a_bal=tot-a;
+			cout<<"Available balance is"<<a_bal<<endl;
+			}
+		}
+};
