@@ -63,3 +63,42 @@ void showdetails()
 			}
 		}
 };
+
+int main()
+{
+	ATM b;
+	int choice;
+	while(1)
+	{
+		cout<<"What do you want to operate:-"<<endl<<endl;
+		cout<<"\t1. Enter name, Account number, Account password"<<endl;
+		cout<<"\t2. Show Details"<<endl;
+		cout<<"\t3. Deposit Money"<<endl;
+		cout<<"\t4. Show Total balance"<<endl;
+		cout<<"\t5. Withdraw Money"<<endl;
+		cout<<"\t6. Cancel"<<endl;
+		cin >>choice;
+		
+		if(choice==1){
+			b.details();
+		}
+		else if(choice==2){
+			b.showdetails();
+		}
+		else if(choice==3){
+			b.deposit();
+		}
+		else if(choice==4){
+			b.showbal();
+		}
+		else if(choice==5){
+			b.withdrawal();
+		}
+		else if(choice==6){
+			exit(1);
+		}
+		else{
+			cout<<"Invalid choice";
+		}
+	}
+}
